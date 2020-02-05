@@ -1,0 +1,194 @@
+body {
+  display: -ms-grid;
+  display: grid;
+}
+
+body header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+body main {
+  max-width: 1024px;
+  margin: 0 4rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  body main {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body main section#events .event-heading img {
+    display: none;
+  }
+}
+
+body main section#events .event-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  body main section#events .event-grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 250px;
+        grid-template-rows: 250px;
+  }
+}
+
+body main section#events .event-grid article {
+  padding: 2rem;
+}
+
+body main section#events .event-grid article h2 {
+  text-align: center;
+}
+
+body main section#about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  body main section#about {
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    -ms-grid-rows: 250px;
+        grid-template-rows: 250px;
+  }
+}
+
+body main section#about img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  body main section#text img {
+    display: none;
+  }
+}
+
+body main section#form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main section#form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  body main section#form form {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+body main section#form form .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main section#coupons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  body main section#coupons {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+body main section#guns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  body main section#guns {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+body main section#guns article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+body main section#contacts form .middle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  body main section#contacts form .middle {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body #become img {
+    display: none;
+  }
+}
+
+body footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  text-align: center;
+  gap: 3rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  body footer {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    text-align: start;
+    gap: 2rem;
+  }
+}
+/*# sourceMappingURL=layout.css.map */
